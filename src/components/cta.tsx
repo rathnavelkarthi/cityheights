@@ -31,7 +31,7 @@ export function CTA({
         <Button
           asChild
           size="lg"
-          className="group text-base px-8 rounded-full bg-gold text-gold-foreground hover:bg-gold/90"
+          className="group text-base px-8 rounded-full bg-gold text-black hover:bg-gold/90 transition-all duration-300"
         >
           <Link href={buttonHref}>
             {buttonText}

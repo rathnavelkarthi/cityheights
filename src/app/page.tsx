@@ -192,7 +192,7 @@ export default function HomePage() {
               <Button
                 asChild
                 variant="outline"
-                className="border-gold/20 text-white hover:bg-gold/5 rounded-full px-8 group"
+                className="border-white/20 text-white hover:bg-white hover:text-black hover:border-white rounded-full px-8 group transition-all duration-300"
               >
                 <Link href="/events">
                   View Our Events
