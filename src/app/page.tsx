@@ -78,7 +78,7 @@ export default function HomePage() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="text-base px-10 py-6 border-white/40 text-white hover:bg-white hover:text-black rounded-full backdrop-blur-md transition-all duration-300"
+                className="text-base px-10 py-6 border-white/40 text-white hover:bg-white hover:text-black hover:border-white rounded-full backdrop-blur-md transition-all duration-300"
               >
                 <Link href="/events">View Our Work</Link>
               </Button>
