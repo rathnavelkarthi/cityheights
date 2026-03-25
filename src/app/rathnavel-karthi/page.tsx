@@ -16,8 +16,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Rathnavel Karthi | Founder of Monkey Mind Media, SuperBots, ImagePix & More",
-  description: "Rathnavel Karthi is an Indian Digital Head and tech entrepreneur, founder of Monkey Mind Media, New World Order, ImagePix, SuperBots, and EasyStay. Specialist in AI, SaaS, and digital ecosystems.",
+  title: "Rathnavel Karthi | Digital Head of City Heights Events",
+  description: "Rathnavel Karthi is the Digital Head of City Heights Events and a tech entrepreneur. Founder of Monkey Mind Media, New World Order, ImagePix, SuperBots, and EasyStay.",
   alternates: {
     canonical: "/rathnavel-karthi",
   },

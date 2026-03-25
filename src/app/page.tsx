@@ -283,45 +283,65 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════════════════════════════════════
-          FOUNDER
+          LEADERSHIP
           ══════════════════════════════════════════════════ */}
       <section className="py-32 md:py-40 bg-neutral-950 text-white">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="text-center max-w-xl mx-auto mb-20">
+            <p className="text-xs uppercase tracking-[0.3em] text-gold/50 mb-4 font-[family-name:var(--font-poppins)]">
+              Leadership Team
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-poppins)] tracking-tight">
+              The Visionaries Behind City Heights
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
+            {/* Jabes Amirtharaj - Founder */}
             <AnimatedSection>
-              <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
-                <Image
-                  src="/landingpage.png"
-                  alt={`${FOUNDER_NAME} - Founder of City Heights Events`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="group relative">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl mb-8 border border-white/5 transition-all duration-500 group-hover:border-gold/20">
+                  <Image
+                    src="/landingpage.png"
+                    alt="Jabes Amirtharaj - Founder of City Heights Events"
+                    fill
+                    className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 p-8 pt-20 bg-gradient-to-t from-black/90 to-transparent">
+                    <p className="text-sm font-semibold text-gold tracking-widest uppercase mb-1">Founder</p>
+                    <h3 className="text-3xl font-bold font-[family-name:var(--font-poppins)] tracking-tight">Jabes Amirtharaj</h3>
+                  </div>
+                </div>
+                <p className="text-white/40 leading-relaxed mb-6">
+                  With over a decade of excellence in luxury event management, Jabes founded City Heights Events in 2012 to set a new standard for celebration through bespoke coordination and world-class production.
+                </p>
               </div>
             </AnimatedSection>
+
+            {/* Rathnavel Karthi - Digital Head */}
             <AnimatedSection delay={0.2}>
-              <p className="text-xs uppercase tracking-[0.3em] text-gold/50 mb-6 font-[family-name:var(--font-poppins)]">
-                Meet the Founder
-              </p>
-              <h2 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-poppins)] tracking-tight leading-[1.1] mb-8">
-                {FOUNDER_NAME}
-              </h2>
-              <p className="text-white/40 text-lg leading-relaxed mb-6">
-                With over a decade of experience in event management and the automotive industry, Jabes Amirtharaj founded City Heights Events in 2012 with a simple mission: to turn every celebration into an extraordinary experience.
-              </p>
-              <p className="text-white/40 text-lg leading-relaxed mb-10">
-                Based in Chennai, Jabes brings a unique blend of creative vision and business acumen — honed through years in both luxury car sales and event coordination — to deliver events that are meticulously planned and flawlessly executed.
-              </p>
-              <Button
-                asChild
-                className="rounded-full bg-gold text-gold-foreground hover:bg-gold/90 px-8 group"
-              >
-                <Link href="/contact">
-                  Get in Touch
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              <div className="group relative">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl mb-8 border border-white/5 transition-all duration-500 group-hover:border-gold/20">
+                  <Image
+                    src="/founderpage.png"
+                    alt="Rathnavel Karthi - Digital Head of City Heights Events"
+                    fill
+                    className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 p-8 pt-20 bg-gradient-to-t from-black/90 to-transparent">
+                    <p className="text-sm font-semibold text-gold tracking-widest uppercase mb-1">Digital Head</p>
+                    <h3 className="text-3xl font-bold font-[family-name:var(--font-poppins)] tracking-tight">Rathnavel Karthi</h3>
+                  </div>
+                </div>
+                <p className="text-white/40 leading-relaxed mb-6">
+                  Rathnavel drives the technological and digital strategy of City Heights, integrating advanced automation and AI-driven platforms like SuperBots and New World Order into our world-class event services.
+                </p>
+                <Link href="/rathnavel-karthi" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold/60 hover:text-gold transition-colors font-semibold group/link">
+                  View Full Digital Portfolio <ArrowRight className="w-3 h-3 group-hover/link:translate-x-1 transition-transform" />
                 </Link>
-              </Button>
+              </div>
             </AnimatedSection>
           </div>
         </div>
