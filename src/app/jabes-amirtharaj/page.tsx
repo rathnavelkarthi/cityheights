@@ -1,0 +1,212 @@
+import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { 
+  Calendar, 
+  Award, 
+  MapPin, 
+  Users, 
+  Star, 
+  CheckCircle2, 
+  ArrowRight,
+  ShieldCheck,
+  Gem,
+  Sparkles
+} from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Jabes Amirtharaj | Founder of City Heights Events",
+  description: "Jabes Amirtharaj is the founder of City Heights Events, specialized in luxury event management, bespoke weddings, and large-scale corporate productions in Chennai.",
+  alternates: {
+    canonical: "/jabes-amirtharaj",
+  },
+  openGraph: {
+    title: "Jabes Amirtharaj | Premium Event Architect",
+    description: "Founder & visionary behind Chennai's leading premium event management firm, City Heights Events.",
+    images: ["/landingpage.png"],
+  }
+};
+
+const expertise = [
+  {
+    title: "Luxury Wedding Planning",
+    description: "Crafting bespoke matrimonial experiences from palace weddings to modern destination celebrations.",
+    icon: Gem,
+  },
+  {
+    title: "Corporate Excellence",
+    description: "Managing high-stakes corporate galas, product launches, and annual conferences for global brands.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Concert Production",
+    description: "Full-scale technical and hospitality management for international artists and music festivals.",
+    icon: Sparkles,
+  }
+];
+
+const highlights = [
+  { label: "Years Experience", value: "12+" },
+  { label: "Events Managed", value: "500+" },
+  { label: "City Presence", value: "Chennai" },
+  { label: "Client Satisfaction", value: "100%" },
+];
+
+export default function JabesFounderPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jabes Amirtharaj",
+    "jobTitle": "Founder & CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "City Heights Events"
+    },
+    "description": "Founder of City Heights Events, a premier event management company in Chennai specialized in luxury weddings and corporate events.",
+    "url": "https://thecityheights.com/jabes-amirtharaj",
+    "image": "https://thecityheights.com/landingpage.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "IN"
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-neutral-950 text-white selection:bg-gold/20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none opacity-20">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gold/5 rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gold/5 rounded-full blur-[120px]" />
+        </div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div className="flex-1 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/5 border border-gold/10 text-[10px] sm:text-xs font-medium tracking-widest uppercase mb-6 text-gold">
+                <Award className="w-3 h-3" />
+                Founder & Visionary
+              </div>
+              <h1 className="text-5xl lg:text-7xl font-bold tracking-tight mb-6 font-[family-name:var(--font-poppins)]">
+                Jabes <span className="text-gold">Amirtharaj</span>
+              </h1>
+              <p className="text-xl text-white/50 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 font-light">
+                Setting new benchmarks in luxury event management since 2012. 
+                Merging creative passion with over a decade of operational excellence 
+                to transform every celebration into a masterpiece.
+              </p>
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+                <Link href="/contact" className="px-8 py-3 rounded-full bg-gold text-black font-semibold hover:bg-gold/90 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(231,180,95,0.2)]">
+                  Work with Jabes <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link href="/events" className="px-8 py-3 rounded-full bg-white/5 border border-white/10 font-semibold hover:bg-white/10 transition-all">
+                  Our Portfolio
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mt-16 pt-12 border-t border-white/5">
+                {highlights.map((h) => (
+                  <div key={h.label}>
+                    <div className="text-2xl font-bold text-white mb-1">{h.value}</div>
+                    <div className="text-[10px] uppercase tracking-widest text-white/30">{h.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative w-72 lg:w-[450px] group">
+              <div className="absolute -inset-4 bg-gold/10 rounded-2xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="relative rounded-2xl border border-white/10 overflow-hidden aspect-[4/5] bg-neutral-900 shadow-2xl">
+                <Image
+                  src="/landingpage.png"
+                  alt="Jabes Amirtharaj Founder"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Story Section */}
+      <section className="py-24 bg-neutral-900/50">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
+            <div className="relative">
+              <div className="absolute -top-10 -left-10 w-20 h-20 border-t-2 border-l-2 border-gold/30" />
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 font-[family-name:var(--font-poppins)]">A Journey of <span className="text-gold">Excellence</span></h2>
+              <div className="space-y-6 text-white/50 text-lg leading-relaxed font-light">
+                <p>
+                  Jabes Amirtharaj's path to becoming one of Chennai's premier event architects began with a deep-rooted passion for organization and aesthetic perfection. 
+                  With a background shaped by the high-stakes world of luxury automotive sales, he brought a unique "concierge" philosophy to the event industry.
+                </p>
+                <p>
+                  In 2012, he established City Heights Events with a mission to move beyond standard coordination. 
+                  His vision was simple yet profound: treat every event not just as an occasion, but as a signature experience that reflects the personality and prestige of the host.
+                </p>
+                <div className="flex items-center gap-4 py-4">
+                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center text-gold">
+                    <Award className="w-6 h-6" />
+                  </div>
+                  <span className="text-white font-medium italic text-sm">"Success lies in the details that most people overlook."</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid gap-6">
+              {expertise.map((item) => (
+                <div key={item.title} className="p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-gold/20 transition-all group">
+                  <div className="flex gap-6">
+                    <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
+                      <item.icon className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-2 font-[family-name:var(--font-poppins)]">{item.title}</h3>
+                      <p className="text-white/40 text-sm leading-relaxed">{item.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Philosophy Section */}
+      <section className="py-32 border-t border-white/5 overflow-hidden">
+        <div className="container mx-auto px-6 text-center">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-sm uppercase tracking-[0.5em] text-gold mb-12">The Founder's Philosophy</h2>
+            <div className="text-3xl md:text-5xl font-light italic leading-tight text-white/90 font-[family-name:var(--font-poppins)]">
+              "We don’t just manage events; we architect memories. My goal has always been to ensure that every guest leaves a City Heights celebration feeling they’ve been part of something truly extraordinary."
+            </div>
+            <div className="mt-12 text-gold font-semibold tracking-widest uppercase text-sm">— Jabes Amirtharaj</div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="py-12 border-t border-white/5 bg-neutral-950">
+        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="text-xs text-white/20 tracking-widest uppercase">
+            © {new Date().getFullYear()} Jabes Amirtharaj • City Heights Events
+          </div>
+          <div className="flex gap-8">
+            <Link href="/" className="text-xs text-white/20 hover:text-gold transition-colors uppercase tracking-widest">Site Home</Link>
+            <Link href="/events" className="text-xs text-white/20 hover:text-gold transition-colors uppercase tracking-widest">Our Work</Link>
+            <Link href="/contact" className="text-xs text-white/20 hover:text-gold transition-colors uppercase tracking-widest">Connect</Link>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}

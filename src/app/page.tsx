@@ -316,6 +316,9 @@ export default function HomePage() {
                 <p className="text-white/40 leading-relaxed mb-6">
                   With over a decade of excellence in luxury event management, Jabes founded City Heights Events in 2012 to set a new standard for celebration through bespoke coordination and world-class production.
                 </p>
+                <Link href="/jabes-amirtharaj" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold/60 hover:text-gold transition-colors font-semibold group/link">
+                  View Founder Profile <ArrowRight className="w-3 h-3 group-hover/link:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </AnimatedSection>
 
