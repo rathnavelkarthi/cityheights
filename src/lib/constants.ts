@@ -59,7 +59,7 @@ export const SITE_EMAIL = "cityheights1@gmail.com";
 export const SITE_PHONE = "+91 98842 20242";
 export const SITE_WHATSAPP = "+91 98842 20242";
 export const EST_YEAR = "2012";
-export const FOUNDER_NAME = "Jabes Amirtharaj";
+export const FOUNDER_NAME = "Jabez Amirtharaj";
 
 // ─── Navigation ──────────────────────────────────────────
 export const NAV_LINKS: NavLink[] = [

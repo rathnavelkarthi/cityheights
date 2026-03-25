@@ -20,11 +20,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "City Heights Events | Premium Event Management in Chennai",
   description:
-    "Premium event planning and celebration management by Jabes Amirtharaj. Weddings, corporate events, concerts, and festivals in Chennai.",
+    "Premium event planning and celebration management by Jabez Amirtharaj. Weddings, corporate events, concerts, and festivals in Chennai.",
   openGraph: {
     title: "City Heights Events | Premium Event Management in Chennai",
     description:
-      "Premium event planning and celebration management by Jabes Amirtharaj. Weddings, corporate events, concerts, and festivals in Chennai.",
+      "Premium event planning and celebration management by Jabez Amirtharaj. Weddings, corporate events, concerts, and festivals in Chennai.",
     url: "http://www.cityheights.com",
     siteName: "City Heights Events",
     images: [

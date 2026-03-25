@@ -297,26 +297,26 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
-            {/* Jabes Amirtharaj - Founder */}
+            {/* Jabez Amirtharaj - Founder */}
             <AnimatedSection>
               <div className="group relative">
                 <div className="relative aspect-[3/4] overflow-hidden rounded-2xl mb-8 border border-white/5 transition-all duration-500 group-hover:border-gold/20">
                   <Image
                     src="/landingpage.png"
-                    alt="Jabes Amirtharaj - Founder of City Heights Events"
+                    alt="Jabez Amirtharaj - Founder of City Heights Events"
                     fill
                     className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
                     sizes="(max-width: 768px) 100vw, 40vw"
                   />
                   <div className="absolute inset-x-0 bottom-0 p-8 pt-20 bg-gradient-to-t from-black/90 to-transparent">
                     <p className="text-sm font-semibold text-gold tracking-widest uppercase mb-1">Founder</p>
-                    <h3 className="text-3xl font-bold font-[family-name:var(--font-poppins)] tracking-tight">Jabes Amirtharaj</h3>
+                    <h3 className="text-3xl font-bold font-[family-name:var(--font-poppins)] tracking-tight">Jabez Amirtharaj</h3>
                   </div>
                 </div>
                 <p className="text-white/40 leading-relaxed mb-6">
-                  With over a decade of excellence in luxury event management, Jabes founded City Heights Events in 2012 to set a new standard for celebration through bespoke coordination and world-class production.
+                  With over a decade of excellence in luxury event management, Jabez founded City Heights Events in 2012 to set a new standard for celebration through bespoke coordination and world-class production.
                 </p>
-                <Link href="/jabes-amirtharaj" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold/60 hover:text-gold transition-colors font-semibold group/link">
+                <Link href="/jabez-amirtharaj" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold/60 hover:text-gold transition-colors font-semibold group/link">
                   View Founder Profile <ArrowRight className="w-3 h-3 group-hover/link:translate-x-1 transition-transform" />
                 </Link>
               </div>
