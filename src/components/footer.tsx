@@ -7,7 +7,9 @@ import {
   SITE_PHONE,
   OFFICES,
   NAV_LINKS,
+  SOCIAL_LINKS,
 } from "@/lib/constants";
+import { Facebook } from "lucide-react";
 
 const socialIcons = [
   { icon: Instagram, label: "Instagram", href: "#" },
@@ -32,20 +34,24 @@ export function Footer() {
               {SITE_NAME}
             </h3>
             <p className="text-sm text-background/60 leading-relaxed mb-6">
-              Redefining luxury event management across the globe. Based in
-              London, servicing the world.
+              Building your dreams with luxury event management in Chennai.
             </p>
             <div className="flex gap-3">
-              {socialIcons.map(({ icon: Icon, label, href }) => (
-                <a
-                  key={label}
-                  href={href}
-                  aria-label={label}
-                  className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
+              {SOCIAL_LINKS.map(({ label, href }: { label: string; href: string }) => {
+                const Icon = label === "Instagram" ? Instagram : Facebook;
+                return (
+                  <a
+                    key={label}
+                    href={href}
+                    aria-label={label}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
+                  >
+                    <Icon className="h-4 w-4" />
+                  </a>
+                );
+              })}
             </div>
           </div>
 

@@ -50,13 +50,13 @@ export interface Office {
 }
 
 // ─── Site metadata ───────────────────────────────────────
-export const SITE_NAME = "City Heights";
-export const SITE_TAGLINE = "Where Cities Celebrate";
-export const SITE_DESCRIPTION = "Bespoke event production and luxury celebration management.";
-export const SITE_URL = "https://cityheights.com";
-export const SITE_EMAIL = "hello@cityheights.com";
-export const SITE_PHONE = "+1 (555) 000-8888";
-export const SITE_WHATSAPP = "+1 (234) 567-890";
+export const SITE_NAME = "City Heights Events";
+export const SITE_TAGLINE = "Your dreams, our creation";
+export const SITE_DESCRIPTION = "Bespoke event planning and luxury celebration management in Chennai.";
+export const SITE_URL = "http://www.cityheights.com";
+export const SITE_EMAIL = "cityheights1@gmail.com";
+export const SITE_PHONE = "+91 98842 20242";
+export const SITE_WHATSAPP = "+91 98842 20242";
 export const EST_YEAR = "2012";
 
 // ─── Navigation ──────────────────────────────────────────
@@ -70,17 +70,14 @@ export const NAV_LINKS: NavLink[] = [
 
 // ─── Offices ─────────────────────────────────────────────
 export const OFFICES: Office[] = [
-  { city: "New York City", detail: "Manhattan, 5th Ave" },
-  { city: "London", detail: "Mayfair" },
-  { city: "Dubai", detail: "Marina" },
-  { city: "Mumbai", detail: "BKC" },
+  { city: "Nungambakkam", detail: "No. 10, Jagannathan Street, Chennai" },
+  { city: "Kolathur", detail: "Water Canal Road, Chennai" },
 ];
 
 // ─── Social links ────────────────────────────────────────
 export const SOCIAL_LINKS = [
-  { label: "Instagram", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "Vimeo", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/city_heights_groups/" },
+  { label: "Facebook", href: "https://www.facebook.com/people/City-Heights-Events/100064761493413/" },
 ];
 
 // ─── Homepage data ───────────────────────────────────────
