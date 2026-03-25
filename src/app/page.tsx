@@ -291,7 +291,7 @@ export default function HomePage() {
             <AnimatedSection>
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
                 <Image
-                  src="/images/founder.png"
+                  src="/landingpage.png"
                   alt={`${FOUNDER_NAME} - Founder of City Heights Events`}
                   fill
                   className="object-cover"

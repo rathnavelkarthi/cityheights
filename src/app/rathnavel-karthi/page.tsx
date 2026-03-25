@@ -134,7 +134,7 @@ export default function PortfolioPage() {
               <div className="absolute inset-0 bg-white/10 rounded-2xl blur-2xl group-hover:bg-white/20 transition-all duration-500" />
               <div className="relative rounded-2xl border border-white/10 overflow-hidden aspect-[3/4] bg-neutral-900 shadow-2xl">
                 <Image
-                  src="/founder_portrait.png"
+                  src="/founderpage.png"
                   alt="Rathnavel Karthi Digital Head"
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
