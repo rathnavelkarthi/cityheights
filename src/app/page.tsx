@@ -305,7 +305,7 @@ export default function HomePage() {
                     src="/landingpage.png"
                     alt="Jabez Amirtharaj - Founder of City Heights Events"
                     fill
-                    className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    className="object-cover transition-all duration-700"
                     sizes="(max-width: 768px) 100vw, 40vw"
                   />
                   <div className="absolute inset-x-0 bottom-0 p-8 pt-20 bg-gradient-to-t from-black/90 to-transparent">
@@ -327,10 +327,10 @@ export default function HomePage() {
               <div className="group relative">
                 <div className="relative aspect-[3/4] overflow-hidden rounded-2xl mb-8 border border-white/5 transition-all duration-500 group-hover:border-gold/20">
                   <Image
-                    src="/founderpage.png"
+                    src="/founder_portrait.png"
                     alt="Rathnavel Karthi - Digital Head of City Heights Events"
                     fill
-                    className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    className="object-cover transition-all duration-700"
                     sizes="(max-width: 768px) 100vw, 40vw"
                   />
                   <div className="absolute inset-x-0 bottom-0 p-8 pt-20 bg-gradient-to-t from-black/90 to-transparent">

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jabez Amirtharaj | Premium Event Architect",
     description: "Founder & visionary behind Chennai's leading premium event management firm, City Heights Events.",
-    images: ["/landingpage.png"],
+    images: ["/founderpage.png"],
   }
 };
 
@@ -64,7 +64,7 @@ export default function JabezFounderPage() {
     },
     "description": "Founder of City Heights Events, a premier event management company in Chennai specialized in luxury weddings and corporate events.",
     "url": "https://thecityheights.com/jabez-amirtharaj",
-    "image": "https://thecityheights.com/landingpage.png",
+    "image": "https://thecityheights.com/founderpage.png",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Chennai",
