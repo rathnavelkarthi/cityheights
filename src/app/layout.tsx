@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { CTAPopup } from "@/components/cta-popup";
+import { WhatsAppFAB } from "@/components/whatsapp-fab";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -56,6 +58,8 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <CTAPopup />
+        <WhatsAppFAB />
       </body>
     </html>
   );
