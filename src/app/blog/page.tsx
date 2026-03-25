@@ -214,7 +214,7 @@ export default function BlogPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             {tips.map((tip, i) => (
-              <AnimatedSection key={tip.title} delay={i * 0.15}>
+              <AnimatedSection key={tip.title} delay={i * 0.07}>
                 <div className="relative group rounded-3xl overflow-hidden aspect-[16/10]">
                   <Image
                     src={tip.image}

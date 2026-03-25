@@ -54,19 +54,19 @@ export default function EventsPage() {
               Our Events
             </p>
           </AnimatedSection>
-          <AnimatedSection delay={0.15}>
+          <AnimatedSection delay={0.08}>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tighter leading-[0.85] mb-8">
               Unforgettable
               <br />
               Celebrations
             </h1>
           </AnimatedSection>
-          <AnimatedSection delay={0.3}>
+          <AnimatedSection delay={0.16}>
             <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto leading-relaxed font-light">
               Discover our upcoming curated experiences and signature events across Chennai.
             </p>
           </AnimatedSection>
-          <AnimatedSection delay={0.45}>
+          <AnimatedSection delay={0.24}>
             <div className="mt-12">
               <div className="animate-bounce inline-block">
                 <div className="w-px h-16 bg-gradient-to-b from-gold to-transparent mx-auto" />
@@ -97,7 +97,7 @@ export default function EventsPage() {
 
                 <div className="absolute -bottom-8 -right-4 md:right-8 flex flex-col gap-3">
                   {featured.stats.map((stat, i) => (
-                    <AnimatedSection key={stat.label} delay={0.5 + i * 0.1}>
+                    <AnimatedSection key={stat.label} delay={0.2 + i * 0.05}>
                       <div className="bg-neutral-900/90 backdrop-blur-xl border border-gold/10 p-4 rounded-xl shadow-2xl min-w-[160px]">
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 rounded-full bg-gold/5 flex items-center justify-center">

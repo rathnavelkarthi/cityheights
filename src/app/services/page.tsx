@@ -71,19 +71,19 @@ export default function ServicesPage() {
               What We Do
             </p>
           </AnimatedSection>
-          <AnimatedSection delay={0.15}>
+          <AnimatedSection delay={0.08}>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tighter leading-[0.9]">
               Crafting Extraordinary
               <br />
               Moments
             </h1>
           </AnimatedSection>
-          <AnimatedSection delay={0.3}>
+          <AnimatedSection delay={0.16}>
             <p className="mt-8 text-lg text-white/45 max-w-xl mx-auto leading-relaxed">
               From intimate gatherings to grand celebrations. We design experiences people never forget.
             </p>
           </AnimatedSection>
-          <AnimatedSection delay={0.45}>
+          <AnimatedSection delay={0.24}>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 asChild
@@ -128,7 +128,7 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {categories.map((cat, i) => (
-              <AnimatedSection key={cat.title} delay={i * 0.1}>
+              <AnimatedSection key={cat.title} delay={i * 0.05}>
                 <div className="group relative overflow-hidden rounded-2xl cursor-pointer aspect-[3/4]">
                   <Image
                     src={cat.image}
@@ -172,7 +172,7 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {portfolio.map((event, i) => (
-              <AnimatedSection key={event.title} delay={i * 0.1}>
+              <AnimatedSection key={event.title} delay={i * 0.05}>
                 <div className="group relative overflow-hidden rounded-2xl cursor-pointer aspect-[16/10]">
                   <Image
                     src={event.image}
@@ -275,7 +275,7 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
             {processSteps.map((step, i) => (
-              <AnimatedSection key={step.num} delay={i * 0.12}>
+              <AnimatedSection key={step.num} delay={i * 0.06}>
                 <div className="relative group px-8 py-14 border-l border-white/[0.06] first:border-l-0 md:first:border-l hover:bg-white/[0.02] transition-colors duration-500">
                   <span className="text-7xl font-bold text-gold/[0.06] font-[family-name:var(--font-poppins)] absolute top-4 right-6 select-none group-hover:text-gold/[0.12] transition-colors duration-500">
                     {step.num}
@@ -316,7 +316,7 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {PRICING_TIERS.map((tier, i) => (
-              <AnimatedSection key={tier.name} delay={i * 0.12}>
+              <AnimatedSection key={tier.name} delay={i * 0.06}>
                 <Card
                   className={`h-full border transition-all duration-500 hover:-translate-y-1 ${
                     tier.highlight
@@ -381,12 +381,12 @@ export default function ServicesPage() {
               Something Special?
             </h2>
           </AnimatedSection>
-          <AnimatedSection delay={0.15}>
+          <AnimatedSection delay={0.08}>
             <p className="mt-6 text-lg text-white/40 max-w-lg mx-auto leading-relaxed">
               Join Chennai&apos;s most trusted event hosts. Let&apos;s bring your vision to life.
             </p>
           </AnimatedSection>
-          <AnimatedSection delay={0.3}>
+          <AnimatedSection delay={0.16}>
             <Button
               asChild
               size="lg"
