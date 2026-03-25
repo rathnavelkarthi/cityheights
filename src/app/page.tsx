@@ -67,7 +67,7 @@ export default function HomePage() {
               <Button
                 asChild
                 size="lg"
-                className="text-base px-10 py-6 bg-gold text-gold-foreground hover:bg-gold/90 rounded-full group"
+                className="text-base px-10 py-6 bg-[#E7B45F] text-black hover:bg-[#D4A34F] rounded-full group transition-all"
               >
                 <Link href="/contact">
                   Plan Your Event
