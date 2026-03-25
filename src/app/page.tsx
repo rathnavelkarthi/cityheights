@@ -51,7 +51,12 @@ export default function HomePage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.08}>
-            <h1 className="tex          <AnimatedSection delay={0.16}>
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tighter leading-[0.9]">
+              {SITE_TAGLINE}
+            </h1>
+          </AnimatedSection>
+ 
+          <AnimatedSection delay={0.16}>
             <p className="mt-8 text-lg md:text-xl text-white/50 max-w-2xl mx-auto leading-relaxed">
               Premium event planning and celebration management by Jabez Amirtharaj, based in Chennai.
             </p>
@@ -86,12 +91,6 @@ export default function HomePage() {
                 }}
               >
                 <Link href="/events" style={{ color: 'inherit' }}>View Our Work</Link>
-              </Button>
-            </div>
-          </AnimatedSection>
-ed-full backdrop-blur-md transition-all duration-300"
-              >
-                <Link href="/events">View Our Work</Link>
               </Button>
             </div>
           </AnimatedSection>
