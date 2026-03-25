@@ -31,11 +31,11 @@ All site copy, navigation links, testimonials, events, blog posts, pricing tiers
 `src/app/layout.tsx` renders Navbar and Footer on every page. Main content has `pt-[73px]` to clear the fixed navbar.
 
 ### Pages (App Router)
-- `/` — Homepage (hero, expertise cards, case study, testimonials, process steps, CTA)
-- `/services` — Service showcase with pricing tiers
-- `/events` — Event listings with featured event
-- `/blog` — Blog with client-side category filtering
-- `/contact` — Contact form and inquiry page
+- `/` — Homepage (hero, expertise cards, case study, testimonials, process steps, founder section, CTA)
+- `/services` — Service showcase with pricing tiers (INR)
+- `/events` — Event listings with featured event (Chennai venues)
+- `/blog` — Blog with client-side category filtering (Chennai-focused content)
+- `/contact` — Contact form and enquiry page (two Chennai offices)
 
 ### Shared Components
 - `AnimatedSection` — Wraps content with Framer Motion fade-in-up animation triggered on scroll (useInView, fires once)
@@ -44,12 +44,21 @@ All site copy, navigation links, testimonials, events, blog posts, pricing tiers
 
 ### Styling
 - Theme uses CSS custom properties with OKLCH color space in `globals.css`
-- Dark mode via `.dark` class
+- Custom `--gold` / `--gold-foreground` brand accent color (warm amber, OKLCH hue 85)
+- Dark luxury aesthetic with gold accent touches throughout
 - Mobile-first responsive design (`md:`, `lg:` breakpoints)
+
+## Business Context
+
+- **Company**: City Heights Events, Chennai, Tamil Nadu
+- **Founder**: Jabes Amirtharaj (event manager + car sales background)
+- **Services**: Weddings, corporate events, concerts, festivals
+- **Offices**: Nungambakkam & Kolathur, Chennai
+- **Pricing**: INR (₹50k Essential, ₹2L Premium, Custom Elite)
 
 ## Current State
 
 - Forms (contact, newsletter) use `e.preventDefault()` with no backend submission
 - No CMS — all content lives in constants.ts
-- Images use placeholder gradients, not real assets
-- Many links point to `#` (not yet implemented)
+- Images use placeholder paths (not real assets yet)
+- Some links point to `#` (privacy, terms)

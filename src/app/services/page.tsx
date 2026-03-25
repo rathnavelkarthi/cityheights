@@ -9,56 +9,54 @@ import { Badge } from "@/components/ui/badge";
 import { AnimatedSection } from "@/components/animated-section";
 import { PRICING_TIERS } from "@/lib/constants";
 
-/* ─── Local data ─── */
-
 const categories = [
-  { title: "Corporate Events", image: "/images/cat-corporate.png", alt: "Corporate awards ceremony" },
-  { title: "Weddings", image: "/images/cat-wedding.png", alt: "Beach wedding at sunset" },
-  { title: "Concerts", image: "/images/cat-concert.png", alt: "Concert with laser show" },
-  { title: "Festivals", image: "/images/cat-festival.png", alt: "Aerial view of music festival" },
+  { title: "Corporate Events", image: "/images/cat-corporate.png", alt: "Corporate event setup in Chennai" },
+  { title: "Weddings", image: "/images/cat-wedding.png", alt: "Traditional wedding reception in Chennai" },
+  { title: "Concerts", image: "/images/cat-concert.png", alt: "Live concert at a Chennai venue" },
+  { title: "Festivals", image: "/images/cat-festival.png", alt: "Cultural festival celebration in Chennai" },
 ];
 
 const portfolio = [
-  { title: "Luxury Wedding", location: "Dubai", image: "/images/port-dubai.png", caption: "An opulent celebration under the stars beside the city skyline." },
-  { title: "Tech Summit", location: "Singapore", image: "/images/port-singapore.png", caption: "A futuristic conference for 500 global leaders in innovation." },
-  { title: "Private Gala", location: "London", image: "/images/port-london.png", caption: "Black-tie dinner inside a historic Mayfair mansion." },
-  { title: "Music Festival", location: "Ibiza", image: "/images/port-ibiza.png", caption: "Sunset beach stage with 3,000 guests and world-class DJs." },
+  { title: "Grand Wedding Reception", location: "ITC Grand Chola, Chennai", image: "/images/port-dubai.png", caption: "A magnificent reception for 1,000 guests with bespoke decor and live entertainment." },
+  { title: "Tech Summit 2025", location: "Hilton, Chennai", image: "/images/port-singapore.png", caption: "A two-day innovation summit for 500 leaders in technology and business." },
+  { title: "Private Gala Dinner", location: "The Leela Palace, Chennai", image: "/images/port-london.png", caption: "An intimate black-tie dinner with curated entertainment and fine dining." },
+  { title: "Summer Music Festival", location: "YMCA Grounds, Nandanam", image: "/images/port-ibiza.png", caption: "An open-air festival featuring top artists and immersive stage production." },
 ];
 
 const offerings = [
   {
     title: "Venue Sourcing & Curation",
-    description: "We scout, negotiate, and secure the world's most exclusive venues — from hidden rooftops to private islands. Every space is chosen to match the energy and ambition of your event.",
-    bullets: ["Exclusive Partnerships", "Technical Feasibility Surveys", "VIP Access & Permitting"],
+    description: "We scout, negotiate, and secure Chennai's most sought-after venues — from luxury hotel ballrooms to open-air beachside locations. Every space is chosen to match the energy and ambition of your event.",
+    bullets: ["Exclusive Venue Partnerships", "Technical Feasibility Surveys", "Permitting & Logistics"],
     image: "/images/offering-venue.png",
-    alt: "Underground venue being prepared",
+    alt: "Luxury venue setup in Chennai",
   },
   {
-    title: "Artist Management",
-    description: "From headliner procurement to full backstage logistics, we handle every detail of talent management so your lineup hits every note.",
-    bullets: ["Global Talent Procurement", "Rider & Technical Management", "Full Backstage Logistics"],
+    title: "Artist & Entertainment Management",
+    description: "From headliner booking to full backstage logistics, we handle every detail of entertainment management so your lineup delivers a memorable experience.",
+    bullets: ["Talent Procurement & Booking", "Technical & Sound Management", "Full Backstage Coordination"],
     image: "/images/offering-artist.png",
-    alt: "DJ performing at private event",
+    alt: "Live artist performing at a Chennai event",
   },
 ];
 
 const processSteps = [
-  { num: "01", title: "Consultation", description: "Deep dive into the client vision and event goals. We learn your DNA before we write a single brief." },
+  { num: "01", title: "Consultation", description: "Deep dive into your vision and event goals. We understand your requirements before drafting a single plan." },
   { num: "02", title: "Concept", description: "Creative brainstorming meets technical planning. Mood boards, floor plans, and run-of-show documents take shape." },
   { num: "03", title: "Execution", description: "Professional on-site production and event management. Our crew runs the show while you enjoy it." },
-  { num: "04", title: "Post Event", description: "Media delivery, analytics, and reporting. We capture everything so the memories live on." },
+  { num: "04", title: "Post Event", description: "Media delivery, analytics, and review. We capture everything so the memories live on." },
 ];
 
 export default function ServicesPage() {
   return (
     <>
       {/* ══════════════════════════════════════════════════
-          SECTION 1 — HERO
+          HERO
           ══════════════════════════════════════════════════ */}
       <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/images/services-hero.png"
-          alt="Massive luxury outdoor festival stage at night"
+          alt="Stunning event setup by City Heights Events"
           fill
           priority
           className="object-cover object-center"
@@ -69,7 +67,7 @@ export default function ServicesPage() {
 
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
           <AnimatedSection>
-            <p className="text-xs uppercase tracking-[0.4em] text-white/35 mb-6 font-[family-name:var(--font-poppins)]">
+            <p className="text-xs uppercase tracking-[0.4em] text-gold/50 mb-6 font-[family-name:var(--font-poppins)]">
               What We Do
             </p>
           </AnimatedSection>
@@ -82,7 +80,7 @@ export default function ServicesPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <p className="mt-8 text-lg text-white/45 max-w-xl mx-auto leading-relaxed">
-              From intimate gatherings to world-stage productions. We design experiences people never forget.
+              From intimate gatherings to grand celebrations. We design experiences people never forget.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.45}>
@@ -90,7 +88,7 @@ export default function ServicesPage() {
               <Button
                 asChild
                 size="lg"
-                className="text-base px-10 py-6 bg-white text-black hover:bg-white/90 rounded-full group"
+                className="text-base px-10 py-6 bg-gold text-gold-foreground hover:bg-gold/90 rounded-full group"
               >
                 <Link href="#categories">
                   Explore Services
@@ -111,13 +109,13 @@ export default function ServicesPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════
-          SECTION 2 — EVENT CATEGORIES
+          EVENT CATEGORIES
           ══════════════════════════════════════════════════ */}
       <section id="categories" className="py-28 bg-neutral-950">
         <div className="mx-auto max-w-7xl px-6">
           <AnimatedSection>
             <div className="max-w-xl mb-16">
-              <p className="text-xs uppercase tracking-[0.3em] text-white/30 mb-4 font-[family-name:var(--font-poppins)]">
+              <p className="text-xs uppercase tracking-[0.3em] text-gold/50 mb-4 font-[family-name:var(--font-poppins)]">
                 Event Categories
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tight leading-[1.05]">
@@ -144,7 +142,7 @@ export default function ServicesPage() {
                     <h3 className="text-xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tight">
                       {cat.title}
                     </h3>
-                    <div className="mt-3 flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white/40 group-hover:text-white/70 transition-colors">
+                    <div className="mt-3 flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-gold/40 group-hover:text-gold/70 transition-colors">
                       View events
                       <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
                     </div>
@@ -157,13 +155,13 @@ export default function ServicesPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════
-          SECTION 3 — SIGNATURE EVENTS / PORTFOLIO
+          PORTFOLIO
           ══════════════════════════════════════════════════ */}
       <section className="py-28 bg-neutral-900">
         <div className="mx-auto max-w-7xl px-6">
           <AnimatedSection>
             <div className="text-center max-w-xl mx-auto mb-16">
-              <p className="text-xs uppercase tracking-[0.3em] text-white/30 mb-4 font-[family-name:var(--font-poppins)]">
+              <p className="text-xs uppercase tracking-[0.3em] text-gold/50 mb-4 font-[family-name:var(--font-poppins)]">
                 Signature Events
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tight">
@@ -178,14 +176,14 @@ export default function ServicesPage() {
                 <div className="group relative overflow-hidden rounded-2xl cursor-pointer aspect-[16/10]">
                   <Image
                     src={event.image}
-                    alt={`${event.title} in ${event.location}`}
+                    alt={`${event.title} at ${event.location}`}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
-                    <div className="flex items-center gap-2 text-xs text-white/50 mb-2">
+                    <div className="flex items-center gap-2 text-xs text-gold/50 mb-2">
                       <MapPin className="h-3 w-3" />
                       {event.location}
                     </div>
@@ -204,13 +202,13 @@ export default function ServicesPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════
-          SECTION 4 — CORE OFFERINGS (editorial split)
+          CORE OFFERINGS
           ══════════════════════════════════════════════════ */}
       <section className="py-28 bg-neutral-950">
         <div className="mx-auto max-w-7xl px-6">
           <AnimatedSection>
             <div className="max-w-xl mb-20">
-              <p className="text-xs uppercase tracking-[0.3em] text-white/30 mb-4 font-[family-name:var(--font-poppins)]">
+              <p className="text-xs uppercase tracking-[0.3em] text-gold/50 mb-4 font-[family-name:var(--font-poppins)]">
                 Core Offerings
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tight leading-[1.05]">
@@ -225,7 +223,6 @@ export default function ServicesPage() {
             {offerings.map((item, i) => (
               <AnimatedSection key={item.title}>
                 <div className={`grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center ${i % 2 === 1 ? "md:[direction:rtl]" : ""}`}>
-                  {/* Image */}
                   <div className="relative overflow-hidden rounded-2xl aspect-[4/3] md:[direction:ltr]">
                     <Image
                       src={item.image}
@@ -235,8 +232,6 @@ export default function ServicesPage() {
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
-
-                  {/* Text */}
                   <div className="md:[direction:ltr]">
                     <h3 className="text-3xl md:text-4xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tight mb-6">
                       {item.title}
@@ -247,8 +242,8 @@ export default function ServicesPage() {
                     <ul className="space-y-4">
                       {item.bullets.map((b) => (
                         <li key={b} className="flex items-center gap-3 text-white/60">
-                          <div className="w-5 h-5 rounded-full bg-white/[0.06] flex items-center justify-center flex-shrink-0">
-                            <Check className="h-3 w-3 text-white/50" />
+                          <div className="w-5 h-5 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+                            <Check className="h-3 w-3 text-gold/60" />
                           </div>
                           <span className="text-sm">{b}</span>
                         </li>
@@ -263,13 +258,13 @@ export default function ServicesPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════
-          SECTION 5 — OUR PROCESS (numbered timeline)
+          PROCESS
           ══════════════════════════════════════════════════ */}
       <section className="py-28 bg-neutral-900">
         <div className="mx-auto max-w-7xl px-6">
           <AnimatedSection>
             <div className="text-center max-w-xl mx-auto mb-20">
-              <p className="text-xs uppercase tracking-[0.3em] text-white/30 mb-4 font-[family-name:var(--font-poppins)]">
+              <p className="text-xs uppercase tracking-[0.3em] text-gold/50 mb-4 font-[family-name:var(--font-poppins)]">
                 The City Heights Way
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tight">
@@ -282,11 +277,11 @@ export default function ServicesPage() {
             {processSteps.map((step, i) => (
               <AnimatedSection key={step.num} delay={i * 0.12}>
                 <div className="relative group px-8 py-14 border-l border-white/[0.06] first:border-l-0 md:first:border-l hover:bg-white/[0.02] transition-colors duration-500">
-                  <span className="text-7xl font-bold text-white/[0.04] font-[family-name:var(--font-poppins)] absolute top-4 right-6 select-none group-hover:text-white/[0.08] transition-colors duration-500">
+                  <span className="text-7xl font-bold text-gold/[0.06] font-[family-name:var(--font-poppins)] absolute top-4 right-6 select-none group-hover:text-gold/[0.12] transition-colors duration-500">
                     {step.num}
                   </span>
                   <div className="relative">
-                    <p className="text-xs uppercase tracking-[0.2em] text-white/20 mb-3">
+                    <p className="text-xs uppercase tracking-[0.2em] text-gold/30 mb-3">
                       Step {step.num}
                     </p>
                     <h3 className="text-xl font-bold font-[family-name:var(--font-poppins)] text-white mb-3 tracking-tight">
@@ -304,13 +299,13 @@ export default function ServicesPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════
-          SECTION 6 — EVENT PACKAGES
+          PRICING
           ══════════════════════════════════════════════════ */}
       <section className="py-28 bg-neutral-950">
         <div className="mx-auto max-w-7xl px-6">
           <AnimatedSection>
             <div className="text-center max-w-xl mx-auto mb-16">
-              <p className="text-xs uppercase tracking-[0.3em] text-white/30 mb-4 font-[family-name:var(--font-poppins)]">
+              <p className="text-xs uppercase tracking-[0.3em] text-gold/50 mb-4 font-[family-name:var(--font-poppins)]">
                 Packages
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tight">
@@ -325,13 +320,13 @@ export default function ServicesPage() {
                 <Card
                   className={`h-full border transition-all duration-500 hover:-translate-y-1 ${
                     tier.highlight
-                      ? "bg-white/[0.06] border-white/[0.15] shadow-lg shadow-white/[0.03]"
+                      ? "bg-gold/[0.06] border-gold/[0.2] shadow-lg shadow-gold/[0.03]"
                       : "bg-white/[0.02] border-white/[0.06] hover:bg-white/[0.04]"
                   }`}
                 >
                   <CardHeader className="pb-4 p-8">
                     {tier.highlight && (
-                      <Badge variant="secondary" className="w-fit mb-4 bg-white/10 text-white text-[10px] uppercase tracking-widest border-0">
+                      <Badge variant="secondary" className="w-fit mb-4 bg-gold/15 text-gold border-0 text-[10px] uppercase tracking-widest">
                         Most Popular
                       </Badge>
                     )}
@@ -351,7 +346,7 @@ export default function ServicesPage() {
                     <ul className="space-y-3 mb-8">
                       {tier.features.map((f) => (
                         <li key={f} className="flex items-start gap-3 text-sm text-white/40">
-                          <Check className="h-4 w-4 text-white/25 mt-0.5 flex-shrink-0" />
+                          <Check className="h-4 w-4 text-gold/40 mt-0.5 flex-shrink-0" />
                           {f}
                         </li>
                       ))}
@@ -360,7 +355,7 @@ export default function ServicesPage() {
                       asChild
                       className={`w-full rounded-full ${
                         tier.highlight
-                          ? "bg-white text-black hover:bg-white/90"
+                          ? "bg-gold text-gold-foreground hover:bg-gold/90"
                           : "bg-white/[0.06] text-white hover:bg-white/[0.1] border border-white/[0.08]"
                       }`}
                     >
@@ -375,27 +370,27 @@ export default function ServicesPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════
-          SECTION 7 — FINAL CTA
+          FINAL CTA
           ══════════════════════════════════════════════════ */}
       <section className="py-32 bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-6xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tight leading-[1.1]">
-              Ready to Ignite
+              Ready to Create
               <br />
-              the Night?
+              Something Special?
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.15}>
             <p className="mt-6 text-lg text-white/40 max-w-lg mx-auto leading-relaxed">
-              Join the ranks of the city&apos;s most prestigious event hosts.
+              Join Chennai&apos;s most trusted event hosts. Let&apos;s bring your vision to life.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <Button
               asChild
               size="lg"
-              className="mt-10 text-base px-12 py-6 bg-white text-black hover:bg-white/90 rounded-full group"
+              className="mt-10 text-base px-12 py-6 bg-gold text-gold-foreground hover:bg-gold/90 rounded-full group"
             >
               <Link href="/contact">
                 Start Planning

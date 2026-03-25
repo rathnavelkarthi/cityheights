@@ -16,29 +16,31 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "City Heights | Where Cities Celebrate",
+  title: "City Heights Events | Premium Event Management in Chennai",
   description:
-    "Crafting legendary experiences for the world's most discerning hosts. From private galas to global festivals.",
+    "Premium event planning and celebration management by Jabes Amirtharaj. Weddings, corporate events, concerts, and festivals in Chennai.",
   openGraph: {
-    title: "City Heights | Where Cities Celebrate",
-    description: "Crafting legendary experiences for the world's most discerning hosts. From private galas to global festivals.",
-    url: "https://github.com/rathnavelkarthi/cityheights",
-    siteName: "City Heights",
+    title: "City Heights Events | Premium Event Management in Chennai",
+    description:
+      "Premium event planning and celebration management by Jabes Amirtharaj. Weddings, corporate events, concerts, and festivals in Chennai.",
+    url: "http://www.cityheights.com",
+    siteName: "City Heights Events",
     images: [
       {
         url: "/images/services-hero.png",
         width: 1200,
         height: 630,
-        alt: "City Heights Events",
+        alt: "City Heights Events - Premium Event Management in Chennai",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "City Heights | Where Cities Celebrate",
-    description: "Crafting legendary experiences for the world's most discerning hosts.",
+    title: "City Heights Events | Premium Event Management in Chennai",
+    description:
+      "Premium event planning by Jabes Amirtharaj in Chennai.",
     images: ["/images/services-hero.png"],
   },
 };

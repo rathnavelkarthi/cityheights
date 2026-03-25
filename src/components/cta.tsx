@@ -16,24 +16,22 @@ export function CTA({
   buttonHref = "/contact",
 }: CTAProps) {
   return (
-    <section className="relative overflow-hidden bg-primary text-primary-foreground py-20 md:py-28">
-      {/* Subtle gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-primary/80" />
+    <section className="relative overflow-hidden bg-neutral-950 text-white py-20 md:py-28">
+      <div className="absolute inset-0 bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950" />
 
       <div className="relative mx-auto max-w-3xl px-6 text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-[family-name:var(--font-poppins)] mb-6">
           {title}
         </h2>
         {description && (
-          <p className="text-lg text-primary-foreground/70 mb-8 max-w-xl mx-auto">
+          <p className="text-lg text-white/40 mb-8 max-w-xl mx-auto">
             {description}
           </p>
         )}
         <Button
           asChild
           size="lg"
-          variant="secondary"
-          className="group text-base px-8"
+          className="group text-base px-8 rounded-full bg-gold text-gold-foreground hover:bg-gold/90"
         >
           <Link href={buttonHref}>
             {buttonText}

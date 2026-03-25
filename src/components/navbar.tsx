@@ -85,7 +85,7 @@ export function Navbar() {
                   {isActive && (
                     <motion.span
                       layoutId="nav-dot"
-                      className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-white"
+                      className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-gold"
                       transition={{
                         type: "spring",
                         stiffness: 380,
@@ -108,7 +108,7 @@ export function Navbar() {
           >
             <Button
               asChild
-              className="rounded-full px-6 h-10 font-medium bg-white text-black hover:bg-white/90 hover:shadow-lg hover:shadow-white/10 transition-shadow duration-300"
+              className="rounded-full px-6 h-10 font-medium bg-gold text-gold-foreground hover:bg-gold/90 hover:shadow-lg hover:shadow-gold/10 transition-shadow duration-300"
             >
               <Link href="/contact">Get in Touch</Link>
             </Button>
@@ -189,7 +189,7 @@ export function Navbar() {
                     render={
                       <Button
                         asChild
-                        className="w-full h-12 rounded-lg bg-white text-black hover:bg-white/90 font-medium text-base group"
+                        className="w-full h-12 rounded-lg bg-gold text-gold-foreground hover:bg-gold/90 font-medium text-base group"
                       >
                         <Link href="/contact">
                           Plan Your Event

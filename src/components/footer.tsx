@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Linkedin, Video, MapPin, Mail, Phone } from "lucide-react";
+import { Instagram, MapPin, Mail, Phone, Facebook } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import {
   SITE_NAME,
@@ -8,19 +8,13 @@ import {
   OFFICES,
   NAV_LINKS,
   SOCIAL_LINKS,
+  FOUNDER_NAME,
 } from "@/lib/constants";
-import { Facebook } from "lucide-react";
-
-const socialIcons = [
-  { icon: Instagram, label: "Instagram", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Video, label: "Vimeo", href: "#" },
-];
 
 const resourceLinks = [
-  { label: "Editorial Blog", href: "/blog" },
-  { label: "Planning Guide", href: "#" },
-  { label: "Press Kit", href: "#" },
+  { label: "Blog", href: "/blog" },
+  { label: "Events", href: "/events" },
+  { label: "Services", href: "/services" },
 ];
 
 export function Footer() {
@@ -33,8 +27,11 @@ export function Footer() {
             <h3 className="text-xl font-bold font-[family-name:var(--font-poppins)] mb-4">
               {SITE_NAME}
             </h3>
-            <p className="text-sm text-background/60 leading-relaxed mb-6">
-              Building your dreams with luxury event management in Chennai.
+            <p className="text-sm text-background/60 leading-relaxed mb-2">
+              Premium event management in Chennai by {FOUNDER_NAME}.
+            </p>
+            <p className="text-sm text-background/40 leading-relaxed mb-6">
+              Weddings, corporate events, concerts & festivals.
             </p>
             <div className="flex gap-3">
               {SOCIAL_LINKS.map(({ label, href }: { label: string; href: string }) => {
@@ -101,13 +98,21 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-background/60">
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0" />
-                <a href={`mailto:${SITE_EMAIL}`} className="hover:text-background transition-colors">
+                <a
+                  href={`mailto:${SITE_EMAIL}`}
+                  className="hover:text-background transition-colors"
+                >
                   {SITE_EMAIL}
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0" />
-                <span>{SITE_PHONE}</span>
+                <a
+                  href={`tel:${SITE_PHONE}`}
+                  className="hover:text-background transition-colors"
+                >
+                  {SITE_PHONE}
+                </a>
               </li>
             </ul>
 
@@ -116,9 +121,11 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-background/60">
               {OFFICES.map((office) => (
-                <li key={office.city} className="flex items-center gap-2">
-                  <MapPin className="h-3 w-3 shrink-0" />
-                  {office.city}
+                <li key={office.city} className="flex items-start gap-2">
+                  <MapPin className="h-3 w-3 shrink-0 mt-1" />
+                  <span>
+                    {office.city} — {office.detail}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -128,11 +135,22 @@ export function Footer() {
         <Separator className="my-10 bg-background/10" />
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-background/40">
-          <p>&copy; {new Date().getFullYear()} {SITE_NAME} Global. All Rights Reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} {SITE_NAME}. All Rights Reserved.
+          </p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-background/60 transition-colors">Privacy</Link>
-            <Link href="#" className="hover:text-background/60 transition-colors">Terms</Link>
-            <Link href="#" className="hover:text-background/60 transition-colors">Cookies</Link>
+            <Link
+              href="#"
+              className="hover:text-background/60 transition-colors"
+            >
+              Privacy
+            </Link>
+            <Link
+              href="#"
+              className="hover:text-background/60 transition-colors"
+            >
+              Terms
+            </Link>
           </div>
         </div>
       </div>
