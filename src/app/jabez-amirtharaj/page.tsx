@@ -104,7 +104,7 @@ export default function JabezFounderPage() {
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4">
                 <Link href="/contact" className="px-8 py-3 rounded-full bg-gold text-black font-semibold hover:bg-gold/90 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(231,180,95,0.2)]">
-                  Work with Jabes <ArrowRight className="w-4 h-4" />
+                  Work with Jabez <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link href="/events" className="px-8 py-3 rounded-full bg-white/5 border border-white/10 font-semibold hover:bg-white/10 transition-all">
                   Our Portfolio
@@ -147,8 +147,8 @@ export default function JabezFounderPage() {
               <h2 className="text-3xl md:text-4xl font-bold mb-8 font-[family-name:var(--font-poppins)]">A Journey of <span className="text-gold">Excellence</span></h2>
               <div className="space-y-6 text-white/50 text-lg leading-relaxed font-light">
                 <p>
-                  Jabez Amirtharaj's path to becoming one of Chennai's premier event architects began with a deep-rooted passion for organization and aesthetic perfection. 
-                  With a background shaped by the high-stakes world of luxury automotive sales, he brought a unique "concierge" philosophy to the event industry.
+                  Jabez Amirtharaj&apos;s path to becoming one of Chennai&apos;s premier event architects began with a deep-rooted passion for organization and aesthetic perfection. 
+                  With a background shaped by the high-stakes world of luxury automotive sales, he brought a unique &quot;concierge&quot; philosophy to the event industry.
                 </p>
                 <p>
                   In 2012, he established City Heights Events with a mission to move beyond standard coordination. 
@@ -158,7 +158,7 @@ export default function JabezFounderPage() {
                   <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center text-gold">
                     <Award className="w-6 h-6" />
                   </div>
-                  <span className="text-white font-medium italic text-sm">"Success lies in the details that most people overlook."</span>
+                  <span className="text-white font-medium italic text-sm">&quot;Success lies in the details that most people overlook.&quot;</span>
                 </div>
               </div>
             </div>
@@ -186,11 +186,11 @@ export default function JabezFounderPage() {
       <section className="py-32 border-t border-white/5 overflow-hidden">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-sm uppercase tracking-[0.5em] text-gold mb-12">The Founder's Philosophy</h2>
+            <h2 className="text-sm uppercase tracking-[0.5em] text-gold mb-12">The Founder&apos;s Philosophy</h2>
             <div className="text-3xl md:text-5xl font-light italic leading-tight text-white/90 font-[family-name:var(--font-poppins)]">
-              "We don’t just manage events; we architect memories. My goal has always been to ensure that every guest leaves a City Heights celebration feeling they’ve been part of something truly extraordinary."
+              &quot;We don&apos;t just manage events; we architect memories. My goal has always been to ensure that every guest leaves a City Heights celebration feeling they&apos;ve been part of something truly extraordinary.&quot;
             </div>
-            <div className="mt-12 text-gold font-semibold tracking-widest uppercase text-sm">— Jabez Amirtharaj</div>
+            <div className="mt-12 text-gold font-semibold tracking-widest uppercase text-sm">&mdash; Jabez Amirtharaj</div>
           </div>
         </div>
       </section>

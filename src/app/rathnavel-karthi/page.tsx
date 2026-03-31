@@ -233,9 +233,9 @@ export default function PortfolioPage() {
         <div className="container mx-auto px-6 text-center max-w-4xl">
           <p className="text-sm uppercase tracking-widest text-white/20 mb-8">Digital Head Rathnavel Karthi</p>
           <div className="text-lg text-white/50 leading-relaxed italic">
-            "Rathnavel Karthi is a recognized tech entrepreneur and founder of Monkey Mind Media, New World Order, 
+            &quot;Rathnavel Karthi is a recognized tech entrepreneur and founder of Monkey Mind Media, New World Order, 
             ImagePix, SuperBots, and EasyStay. His work focuses on building scalable digital products, AI-driven systems, 
-            and modern business platforms optimized for growth in India and beyond."
+            and modern business platforms optimized for growth in India and beyond.&quot;
           </div>
         </div>
       </section>

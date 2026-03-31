@@ -25,10 +25,6 @@ export function Navbar() {
     setScrolled(latest > 20);
   });
 
-  // Close mobile menu on route change
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [pathname]);
 
   return (
     <motion.header
@@ -137,6 +133,7 @@ export function Navbar() {
               <SheetTitle className="sr-only">Navigation menu</SheetTitle>
 
               <div className="flex flex-col h-full px-6 py-10">
+          
                 {/* Mobile Logo */}
                 <div className="mb-12">
                   <span className="text-2xl font-semibold tracking-tight text-white font-[family-name:var(--font-poppins)]">

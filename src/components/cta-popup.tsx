@@ -66,20 +66,20 @@ export function CTAPopup() {
   useEffect(() => {
     if (isContactPage || isDismissed()) return;
 
-    let timer: ReturnType<typeof setTimeout>;
+    let timer: NodeJS.Timeout | null = null;
 
-    function onScroll() {
+    const onScroll = () => {
       if (shownRef.current) return;
-      const scrollPct =
-        window.scrollY /
-        (document.documentElement.scrollHeight - window.innerHeight);
-      if (scrollPct >= SCROLL_THRESHOLD) {
+      
+      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      
+      if (scrollPercentage > 30) {
         shownRef.current = true;
         setVisible(true);
+        if (timer) clearTimeout(timer);
         window.removeEventListener("scroll", onScroll);
-        clearTimeout(timer);
       }
-    }
+    };
 
     // Time-based fallback
     timer = setTimeout(() => {
@@ -90,11 +90,10 @@ export function CTAPopup() {
       }
     }, TIME_DELAY_MS);
 
-    window.addEventListener("scroll", onScroll, { passive: true });
-
+    window.addEventListener("scroll", onScroll);
     return () => {
       window.removeEventListener("scroll", onScroll);
-      clearTimeout(timer);
+      if (timer) clearTimeout(timer);
     };
   }, [isContactPage]);
 
