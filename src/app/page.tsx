@@ -357,6 +357,45 @@ export default function HomePage() {
               </div>
             </AnimatedSection>
           </div>
+
+          {/* Teams / Tabular Column Divider */}
+          <div className="w-full h-px bg-white/5 my-24" />
+
+          <div className="text-center max-w-xl mx-auto mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-gold/50 mb-4 font-[family-name:var(--font-poppins)]">
+              Core Team
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-poppins)] tracking-tight">
+              Our Talented Professionals
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Priyanka Venkatesan - Technical Aid */}
+            <AnimatedSection>
+              <div className="group relative bg-white/[0.02] border border-white/5 rounded-2xl p-6 hover:bg-white/[0.05] transition-all duration-300">
+                <div className="relative aspect-square overflow-hidden rounded-xl mb-6">
+                  <Image
+                    src="/priyanka.jpeg"
+                    alt="Priyanka Venkatesan - Technical Aid"
+                    fill
+                    className="object-cover transition-all duration-700 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 30vw"
+                  />
+                </div>
+                <div className="text-center">
+                  <p className="text-xs font-semibold text-gold tracking-widest uppercase mb-2">Technical Aid</p>
+                  <h3 className="text-xl font-bold font-[family-name:var(--font-poppins)] tracking-tight mb-3">Priyanka Venkatesan</h3>
+                  <p className="text-white/50 text-sm leading-relaxed mb-6">
+                    Power BI Developer and Data Analytics expert specializing in transforming complex data into actionable insights for strategic decision-making.
+                  </p>
+                  <Link href="/technical-aid" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold/60 hover:text-gold transition-colors font-semibold group/link">
+                    View Profile <ArrowRight className="w-3 h-3 group-hover/link:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
